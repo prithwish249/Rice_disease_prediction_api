@@ -5,7 +5,6 @@ from keras.preprocessing import image
 logging.getLogger('tensorflow').setLevel(logging.ERROR)  # Suppress TensorFlow INFO messages
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
 import numpy as np
 from flask_cors import CORS
 
