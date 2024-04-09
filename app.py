@@ -1,3 +1,5 @@
+import logging
+logging.getLogger('tensorflow').setLevel(logging.ERROR)  # Suppress TensorFlow INFO messages
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
